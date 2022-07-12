@@ -3,21 +3,18 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import {BrowserRouter,Route,Routes} from "react-router-dom";
 import EditComponent from "./edit";
-import {
-  createStore,
-  applyMiddleware,
-  bindActionCreators,
-  combineReducers,
-} from 'redux';
+import {createStore,applyMiddleware} from store;
+import {createSagaMiddleware} from "redux-saga";
+import 
 
-import { composeWithDevTools } from 'redux-devtools-extension';
-import thunk from 'redux-thunk';
 import App from './App';
 import reducer from './reducer';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
-const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
+const sagamiddleware= createSagaMiddleware()
+const store =createStore(reducer, applyMiddleware(sagamiddleware));
+sagamiddleware.run(saga)
 root.render(
   <StrictMode>
   
