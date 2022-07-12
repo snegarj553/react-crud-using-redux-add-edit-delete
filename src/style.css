@@ -21,8 +21,7 @@ i{
 button {
   margin: auto;
   margin-top: 20px;
-  width: 70px;
-  padding: 5px 0px;
+  padding: 5px 10px;
   border-radius: 5px;
   border: none;
   background-color: rgb(109, 236, 109);

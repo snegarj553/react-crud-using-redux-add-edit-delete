@@ -1,8 +1,8 @@
-import watchgetuser from "./watchgetuser";
+import {watchgetuser} from "./watchgetuser";
 
 
-export default function rootsaga(){
-  yield[
-    watchgetuser()
-  ]
+export default function* (){
+  yield watchgetuser()
+
+  
 }

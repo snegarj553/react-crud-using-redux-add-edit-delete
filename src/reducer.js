@@ -1,10 +1,5 @@
 const initialstate = [
-  {
-    id: 1,
-    name: 'aaaaaaaa',
-    email: 'email',
-    number: 1324324,
-  },
+  
 ];
 
 const reducer = (state = initialstate, action) => {
