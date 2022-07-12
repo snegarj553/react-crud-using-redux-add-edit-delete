@@ -22,7 +22,7 @@ export default function App() {
       <button onClick={handleSubmit}>Fetch User</button>
       {handleSubmit}
 
-     { storedetails && storedetails.map(data=>
+     { storedetails.length > 0  && storedetails.map(data=>
       <p>{data.title} </p>)}
     </form>
   );

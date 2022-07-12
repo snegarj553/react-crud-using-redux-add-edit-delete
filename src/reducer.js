@@ -1,8 +1,6 @@
-const initialstate = [
-  
-];
 
-const reducer = (state = initialstate, action) => {
+
+const reducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_DETAIL':
       state = [...state, action.payload];

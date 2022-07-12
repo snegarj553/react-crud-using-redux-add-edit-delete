@@ -11,7 +11,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
-const initialstate=[];
+const initialstate={};
 
 const sagaMiddleware = reduxSaga()
 // mount it on the Store

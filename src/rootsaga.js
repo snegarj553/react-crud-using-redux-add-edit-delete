@@ -1,8 +1,10 @@
-import {watchgetuser} from "./watchgetuser";
+import {watchGetUser} from "./watchgetuser";
 
 
 export default function* (){
-  yield watchgetuser()
+  yield [
+    watchGetUser()
+  ] 
 
   
 }
