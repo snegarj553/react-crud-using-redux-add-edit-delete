@@ -11,7 +11,7 @@ export default function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  return   dispatch({ type: "FETCH_USER"});
+  return   dispatch({ type:"FETCH_USER"});
   
 };
 
@@ -20,10 +20,13 @@ export default function App() {
      
 
       <button onClick={handleSubmit}>Fetch User</button>
-      {handleSubmit}
 
-     { storedetails.length > 0  && storedetails.map(data=>
-      <p>{data.title} </p>)}
+{console.log("data",storedetails)}
+     { storedetails.map(data=>
+   <>  {console.log("title",data.title)}
+      <p>{data.title} </p>
+      </>
+      )}
     </form>
   );
 }
