@@ -1,8 +1,8 @@
 const initialstate = [
   {
     id: 1,
-    name: 'aaaaaaaa',
-    email: 'email',
+    name: 'User 1',
+    email: 'user1@gmail.com',
     number: 1324324,
   },
 ];
@@ -18,11 +18,9 @@ const reducer = (state = initialstate, action) => {
         return state;
       }
     case 'UPDATE_DETAIL':
-
-    
-    state=action.payload;
-    console.log(state)
-    return state;
+      state = action.payload;
+      console.log(state);
+      return state;
     default:
       return state;
   }

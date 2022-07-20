@@ -98,8 +98,8 @@ export default function App() {
             <td>{data.email}</td>
             <td>{data.number}</td>
             <Link to={`/edit/${data.id}`}>
-           
-              <td><i> &#xf044;</i>
+              <td>
+                <i> &#xf044;</i>
               </td>
             </Link>
             <td onClick={() => deleteitem(data.id)}>
